@@ -19,6 +19,10 @@ public:
 		return !(*this == rhs);
 	}
 
+	BigInt& operator + (BigInt rhs) {
+
+	}
+
 	BigInt& operator - (BigInt rhs) {
 
 	}
