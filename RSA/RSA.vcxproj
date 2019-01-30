@@ -152,6 +152,8 @@
     <ClInclude Include="Encryption.h" />
     <ClInclude Include="Generator.h" />
     <ClInclude Include="Key.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />

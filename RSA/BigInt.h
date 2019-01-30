@@ -3,7 +3,11 @@ class BigInt
 {
 public:
 
-	BigInt (long long int value) {
+	BigInt() {
+
+	}
+
+	BigInt (BigInt int value) {
 
 	}
 
@@ -11,11 +15,24 @@ public:
 
 	}
 
+	bool operator != (BigInt rhs) {
+		return !(*this == rhs);
+	}
+
 	BigInt& operator - (BigInt rhs) {
 
 	}
 
 	BigInt& operator * (BigInt rhs) {
+
+	}
+
+	BigInt& operator / (BigInt rhs) {
+
+	}
+
+
+	BigInt& operator % (BigInt rhs) {
 
 	}
 };
