@@ -1,43 +1,51 @@
 #pragma once
-class BigInt
+class long long
 {
 public:
 
-	BigInt() {
+	long long value;
+
+
+	long long() {
 
 	}
 
-	BigInt (BigInt int value) {
-
+	long long (long long value) {
+		this->value = value;
 	}
 
-	bool operator == (BigInt rhs) {
-
+	bool operator == (long long rhs) {
+		return value == rhs.value;
 	}
 
-	bool operator != (BigInt rhs) {
+	bool operator != (long long rhs) {
 		return !(*this == rhs);
 	}
 
-	BigInt& operator + (BigInt rhs) {
-
+	long long& operator + (long long rhs) {
+		long long sum = value + rhs.value;
+		return sum;
 	}
 
-	BigInt& operator - (BigInt rhs) {
-
+	long long& operator - (long long rhs) {
+		long long dif = value - rhs.value;
+		return dif;
 	}
 
-	BigInt& operator * (BigInt rhs) {
-
+	long long& operator * (long long rhs) {
+		long long pro = value * rhs.value;
+		return pro;
 	}
 
-	BigInt& operator / (BigInt rhs) {
-
+	long long& operator / (long long rhs) {
+		long long quo = value / rhs.value;
+		return quo;
 	}
 
 
-	BigInt& operator % (BigInt rhs) {
-
+	long long& operator % (long long rhs) {
+		long long mod = value % rhs.value;
+		return mod;
 	}
 };
 

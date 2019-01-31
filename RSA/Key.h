@@ -2,17 +2,17 @@
 class Key {
 public:
 	Key() {}
-	BigInt n;
+	long long n;
 };
 
 class PrivateKey : public Key{
 public:
 	PrivateKey() {}
-	BigInt d;
+	long long d;
 };
 
 class PublicKey : public Key {
 public:
 	PublicKey() {}
-	BigInt e;
+	long long e;
 };

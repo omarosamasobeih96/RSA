@@ -12,8 +12,8 @@ public:
 		this->key = key;
 	}
 
-	Message Decrypt(BigInt c) {
-		BigInt m = power(c, key.d, key.n);
+	Message Decrypt(long long c) {
+		long long m = power(c, key.d, key.n);
 		return m;
 	}
 };

@@ -1,14 +1,16 @@
 #pragma once
-#include "BigInt.h"
 
 class Message
 {
-	BigInt message;
 public:
-	Message();
-	Message(BigInt message) {
+
+	long long message;
+
+	Message() {
+
+	}
+	Message(long long message) {
 		this->message = message;
 	}
-	~Message();
 };
 

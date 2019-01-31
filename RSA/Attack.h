@@ -7,8 +7,8 @@ class Attack
 {
 public:
 
-	static Message bruteforceAttack(PublicKey key, BigInt c) {
-		BigInt m = 0;
+	static Message bruteforceAttack(PublicKey key, long long c) {
+		long long m = 0;
 		while (power(m, key.e, key.n) != c) {
 			m = m + 1;
 		}
