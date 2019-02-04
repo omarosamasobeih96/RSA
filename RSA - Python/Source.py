@@ -5,8 +5,7 @@ from Attack import Attack
 
 
 def main():
-    keys = Generator.generate_key(8)
-    print(keys)
+    keys = Generator.generate_key(300)
 
     print("enter message to send")
     message = int(input())
@@ -22,7 +21,8 @@ def main():
     else:
         print("Encryption or Decryption failed")
 
-    attacker_message = Attack.bruteforce_attack(keys[0], encrypted_message)
+    attacker_message, attacker_key = Attack.brute_force_attack(keys[0], encrypted_message)
+    print("attack using brute force key = " + str(attacker_key))
 
     if attacker_message == message:
         print("Brute force attack succeeded")

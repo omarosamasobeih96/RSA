@@ -1,3 +1,37 @@
+import random
+
+
+def is_prime(n):
+    n = int(n)
+    if n == 0 or n == 1 or n == 4 or n == 6 or n == 8 or n == 9:
+        return False
+
+    if n == 2 or n == 3 or n == 5 or n == 7:
+        return True
+
+    s = 0
+    d = n-1
+    while d % 2 == 0:
+        d >>= 1
+        s += 1
+    assert(2 ** s * d == n-1)
+
+    def trial_composite(a):
+        if pow(a, d, n) == 1:
+            return False
+        for i in range(s):
+            if pow(a, 2**i * d, n) == n-1:
+                return False
+        return True
+
+    for i in range(11):
+        a = random.randrange(2, n)
+        if trial_composite(a):
+            return False
+
+    return True
+
+
 def power(base, exp, mod):
     ans = 1
     base %= mod
@@ -7,26 +41,6 @@ def power(base, exp, mod):
         exp >>= 1
         base = (base * base) % mod
     return ans
-
-
-def modular_inverse(u, v):
-    u1 = 1
-    u3 = u
-    v1 = 0
-    v3 = v
-    flag = 1
-    while v3 != 0:
-        q = u3 / v3
-        t3 = u3 - q * v3
-        t1 = u1 + q * v1
-        u1 = v1
-        v1 = t1
-        u3 = v3
-        v3 = t3
-        flag = 1 - flag
-    if flag == 1:
-        return u1
-    return v - u1
 
 
 def euclidean_gcd(a, b):
