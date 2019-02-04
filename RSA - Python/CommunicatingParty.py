@@ -1,7 +1,7 @@
 import Utility
 
 
-class Encryption:
+class CommunicatingParty:
 
     def __init__(self, key):
         self.key = key

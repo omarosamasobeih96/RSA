@@ -1,7 +1,7 @@
 import Utility
 
 
-class Attack:
+class Attacker:
 
     @staticmethod
     # to overcome brute force attck key has to be large enough
