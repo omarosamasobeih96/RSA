@@ -1,4 +1,4 @@
-#pragma once
+	#pragma once
 using namespace std;
 
 long long power(long long base, long long exp, long long mod) {
@@ -16,7 +16,7 @@ long long power(long long base, long long exp, long long mod) {
 
 long long modularInverse(long long u, long long v)
 {
-	long long inv, u1 = 1, u3 = u, v1 = 0, v3 = v, t1, t3, q;
+	long long u1 = 1, u3 = u, v1 = 0, v3 = v, t1, t3, q;
 	bool iter = 1;
 	while (v3 != 0) {
 		q = u3 / v3;
