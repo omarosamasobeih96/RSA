@@ -7,9 +7,9 @@ class Generator:
 
     @staticmethod
     def generate_random_prime(length):
-        start = 10**length
+        start = int(10**length)
         end = 10 * start
-        i = random.randrange(start, end * 17 / 19)
+        i = random.randrange(start, int(end * 17 / 19))
         while 1:
             if Utility.is_prime(i):
                 return i

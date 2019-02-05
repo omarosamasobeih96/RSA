@@ -43,14 +43,20 @@ def power(base, exp, mod):
     return ans
 
 
-def euclidean_gcd(a, b):
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+
+def extended_gcd(a, b):
     if a == 0:
         return b, 0, 1
     else:
-        g, y, x = euclidean_gcd(b % a, a)
+        g, y, x = extended_gcd(b % a, a)
         return g, x - (b // a) * y, y
 
 
 def mod_inv(a, m):
-    g, x, y = euclidean_gcd(a, m)
+    g, x, y = extended_gcd(a, m)
     return x % m

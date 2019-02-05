@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Decryption.h
+Key.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Key.h
+Message.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Message.h
+Utility.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Utility.h
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Encryption.h
+Key.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Key.h
+Message.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Message.h
+Utility.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Utility.h
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Generator.h
+algorithm
+-
+Utility.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Utility.h
+Key.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Key.h
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Key.h
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Message.h
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Source.cpp
+iostream
+-
+Generator.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Generator.h
+Encryption.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Encryption.h
+Decryption.h
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Decryption.h
+
+/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/Utility.h
+

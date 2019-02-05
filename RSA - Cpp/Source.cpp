@@ -3,8 +3,6 @@
 #include "Generator.h"
 #include "Encryption.h"
 #include "Decryption.h"
-#include "Attack.h"
-
 using namespace std;
 
 int main() {
@@ -36,9 +34,4 @@ int main() {
 
 	cout << (mDecryptedMessage.message == m ? "Encryption and Decryption succeeded" : "Failed to restore message") << endl;
 
-	Message attacker_m = Attack::bruteforceAttack(keys.first, cEncryptedMessage);
-
-	cout << "Attacker message = " << attacker_m.message << endl;
-
-	cout << (attacker_m.message == m ? "Attacker succeeded to decrypt message" : "Attacker failed to decrypt message") << endl;
 }

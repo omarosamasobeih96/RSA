@@ -1,0 +1,4 @@
+/home/omar/opt/CLion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/omar/New Volume/Projects during college/RSA/Deliverables/RSA/RSA - Cpp/cmake-build-debug
