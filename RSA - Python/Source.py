@@ -22,9 +22,13 @@ def main():
     else:
         print("Encryption or Decryption failed")
 
-    attacker_message, attacker_key = Attacker.brute_force_attack(keys[0], encrypted_message)
-    print("attack using brute force key = " + str(attacker_key))
+    attacker_message = Attacker.chosen_cipher_attack(keys[0], encrypted_message, decrypter)
+    if attacker_message == message:
+        print("Chosen cipher attack succeeded")
+    else:
+        print("Chosen cipher attack failed")
 
+    attacker_message = Attacker.brute_force_attack(keys[0], encrypted_message)
     if attacker_message == message:
         print("Brute force attack succeeded")
     else:
